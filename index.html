@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Переключатель языка -->
+        <div class="language-switcher">
+            <button id="lang-en" class="lang-button">English</button>
+            <button id="lang-ru" class="lang-button">Русский</button>
+        </div>
+
+        <h1 id="title">Smartphone Selector</h1>
+        <p id="description">Click on one of the options to select features for your smartphone.</p>
+        
+        <table class="selector-table">
+            <tr>
+                <td><label for="budget" id="label-budget">Budget</label></td>
+                <td>
+                    <div class="select-wrapper">
+                        <select id="budget">
+                            <option value="15-25">15-25</option>
+                            <option value="25-50">25-50</option>
+                            <option value="50-75">50-75</option>
+                            <option value="75-100">75-100</option>
+                            <option value="100-125">100-125</option>
+                            <option value="125+">125+</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="processor" id="label-processor">Processor</label></td>
+                <td>
+                    <div class="select-wrapper">
+                        <select id="processor">
+                            <option value="1/5">1/5</option>
+                            <option value="2/5">2/5</option>
+                            <option value="3/5">3/5</option>
+                            <option value="4/5">4/5</option>
+                            <option value="5/5">5/5</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="battery" id="label-battery">Battery</label></td>
+                <td>
+                    <div class="select-wrapper">
+                        <select id="battery">
+                            <option value="1/5">1/5</option>
+                            <option value="2/5">2/5</option>
+                            <option value="3/5">3/5</option>
+                            <option value="4/5">4/5</option>
+                            <option value="5/5">5/5</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="screen" id="label-screen">Screen</label></td>
+                <td>
+                    <div class="select-wrapper">
+                        <select id="screen">
+                            <option value="1/5">1/5</option>
+                            <option value="2/5">2/5</option>
+                            <option value="3/5">3/5</option>
+                            <option value="4/5">4/5</option>
+                            <option value="5/5">5/5</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="camera" id="label-camera">Camera</label></td>
+                <td>
+                    <div class="select-wrapper">
+                        <select id="camera">
+                            <option value="1/5">1/5</option>
+                            <option value="2/5">2/5</option>
+                            <option value="3/5">3/5</option>
+                            <option value="4/5">4/5</option>
+                            <option value="5/5">5/5</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Gsupport" id="label-Gsupport">Gsupport</label></td>
+                <td>
+                    <div class="select-wrapper">
+                        <select id="Gsupport">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="memory" id="label-memory">Memory</label></td>
+                <td>
+                    <div class="select-wrapper">
+                        <select id="memory">
+                            <option value="128GB">128GB</option>
+                            <option value="256GB">256GB</option>
+                            <option value="512GB">512GB</option>
+                            <option value="1024GB">1024GB</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="RAM" id="label-RAM">RAM</label></td>
+                <td>
+                    <div class="select-wrapper">
+                        <select id="RAM">
+                            <option value="8GB">8GB</option>
+                            <option value="12GB">12GB</option>
+                            <option value="16GB">16GB</option>
+                            <option value="16GB">24GB</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <button id="showResult">Show Result</button>
+        
+        <div id="result">
+            <div id="image-container">
+                <img id="smartphone-image" src="" alt="Smartphone">
+            </div>
+            <div id="smartphone-info">
+                <h2 id="smartphone-title">Your Smartphone</h2>
+                <p id="smartphone-specs"></p>
+                <div id="result-container">
+                    <h3 id="smartphone-title">You can buy:</h3>
+                    <ul id="store-links"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
