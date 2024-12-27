@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f9f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2d6a4f;
+}
+
+p {
+    color: #555;
+}
+/*Языки*/
+/* Переключатель языка */
+.language-switcher {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.lang-button {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.lang-button:hover {
+    background-color: #40916c;
+    transform: scale(1.05);
+}
+
+/* Оформление таблицы */
+.selector-table {
+    margin: 20px auto;
+    width: 60%;
+    text-align: left;
+    border-spacing: 15px; /* Пространство между ячейками */
+}
+
+/* Ячейки таблицы */
+.selector-table td {
+    padding: 10px;
+}
+/* Стили выделения текста */
+::selection {
+    background-color: #e8f5e9; /* Цвет фона при выделении */
+    color: #2d6a4f; /* Цвет текста при выделении */
+/* Стили для кастомных списков */
+}
+.select-wrapper {
+    position: relative;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.select-wrapper select {
+    appearance: none; /* Убираем стандартный вид */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f0f9f0;
+    color: #2d6a4f;
+    border: 2px solid #2d6a4f;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.select-wrapper select:hover {
+    background-color: #e8f5e9;
+    border-color: #40916c;
+}
+
+.select-wrapper::after {
+    content: "▼"; /* Стрелка для выпадающего списка */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #2d6a4f;
+    pointer-events: none;
+}
+
+.select-wrapper select:focus {
+    outline: none; /* Убираем стандартную синюю рамку */
+    background-color: #e8f5e9;
+    border-color: #40916c;
+    box-shadow: 0 0 5px rgba(64, 145, 108, 0.5);
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2d6a4f;
+    margin-bottom: 5px;
+    display: block;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button#showResult {
+    display: inline-block;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px; /* Увеличенный размер кнопки */
+    font-size: 18px; /* Крупнее шрифт */
+    cursor: pointer;
+    margin: 30px auto; /* Отступ сверху и снизу */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button#showResult:hover {
+    background-color: #40916c;
+    transform: scale(1.1); /* Лёгкое увеличение при наведении */
+}
+
+#result {
+    margin-top: 50px; /* Больше пространства между кнопкой и результатами */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+#image-container img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#smartphone-info {
+    text-align: left;
+    padding: 10px;
+}
+
+#smartphone-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#smartphone-info ul li {
+    margin: 5px 0;
+}
+/* Стили кнопок для ссылок */
+.store-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.store-button.red {
+    background-color: #e74c3c; /* Красная кнопка */
+}
+
+.store-button.red:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+.store-button.orange {
+    background-color: #f39c12; /* Оранжевая кнопка */
+}
+
+.store-button.orange:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
