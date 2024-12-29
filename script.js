@@ -607,7 +607,7 @@ document.getElementById("showResult").addEventListener("click", function () {
         },
         "125+_5/5_5/5_5/5_5/5_+_1024GB_8GB": {
             name: "Apple iPhone 16 Pro",
-            image: "Qmafer.github.io/images/iphone-16-pro-black-titanium-2-1000x1000.jpg",
+            image: "/images/iphone-16-pro-black-titanium-2-1000x1000.jpg",
             details: {
                 en: "The Apple iPhone 16 Pro 128 GB smartphone in black has a 6.3-inch screen with a resolution of 2622x1206 pixels and an AMOLED matrix, the display maintains comfortable color rendering in bright sunlight and maintains ultra-low brightness so as not to blind at night. The screen has an oleophobic coating that is resistant to scratches and abrasions. The model has a Li-Ion battery, it provides up to 85 hours of battery life in talk mode. The device supports fast charging technology, which allows you to charge the phone from 0 to 50% in half an hour.",
                 ru: "Смартфон Apple iPhone 16 Pro 128 ГБ в черном цвете оснащен экраном 6.3 дюйма с разрешением 2622x1206 точек и AMOLED-матрицей, дисплей сохраняет комфортную цветопередачу под ярким солнцем и поддерживает сверхнизкую яркость, чтобы не слепить ночью. Экран имеет олеофобное покрытие, которое устойчиво к царапинам и потертостям. В модели установлен Li-Ion-аккумулятор, он обеспечивает до 85 часов автономной работы в режиме разговора. Устройство поддерживает технологию быстрой зарядки, которая позволяет подзарядить телефон с 0 до 50% за полчаса."
